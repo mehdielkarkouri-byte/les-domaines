@@ -83,10 +83,21 @@ barre de navigation et les filtres.
 
 Typographie : Poppins (400 → 800). Motif récurrent : le chevron vert sous les titres.
 
+## Visuels et logo
+
+Les visuels produits et le logo proviennent de la boutique en ligne officielle
+`boutiquelesdomaines.ma` (images produits 415 px + logo officiel), repris localement
+dans `assets/img/`. Le catalogue reprend également les libellés et les prix réels
+du site (relevé du 28 octobre 2026). Si le magasin change un visuel, il suffit de
+remplacer le fichier correspondant dans `assets/img/`.
+
+Les trois photos de recettes (`recette-*.png`) sont des visuels d'illustration :
+remplacez-les par les photos officielles quand elles seront disponibles.
+
 ## À personnaliser avant mise en ligne
 
-1. **Numéro WhatsApp** — remplacer `212600000000` dans les liens `https://wa.me/212600000000`
-   (footer et bouton flottant). Dans `build_pages.py`, la constante `WA`.
+1. **Numéro WhatsApp** — `212664428240` (numéro officiel de la boutique) est utilisé
+   dans le footer et le bouton flottant. Constante `WA` dans `build_pages.py`.
 2. **Images** — remplacer les fichiers de `assets/img/` par vos photos produits.
 3. **Domaine** — `SITE = "https://boutiquelesdomaines.ma"` dans `build_pages.py`
    (balises canonical / Open Graph, `sitemap.xml`, `robots.txt`).

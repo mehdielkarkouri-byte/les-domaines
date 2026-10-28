@@ -344,8 +344,8 @@
           '<img src="' + p.img + '" alt="' + escapeHtml(p.name) + '" width="600" height="600">' +
           '<div class="pdp-thumbs">' +
             '<img src="' + p.img + '" alt="">' +
-            '<img src="assets/img/avocat.png" alt="">' +
-            '<img src="assets/img/jben.png" alt="">' +
+            '<img src="assets/img/avocat.jpg" alt="">' +
+            '<img src="assets/img/fromage-sucre.jpg" alt="">' +
           '</div>' +
         '</div>' +
 

@@ -1,5 +1,6 @@
 /* ==========================================================================
    Les Domaines — catalogue produits
+   Prix, libellés et visuels repris de la boutique réelle (boutiquelesdomaines.ma).
    Source unique de vérité : modifiez ce fichier pour changer prix, stock,
    textes ou visuels. Les pages liste / fiche produit se mettent à jour seules.
    ========================================================================== */
@@ -9,7 +10,8 @@ window.LD_CATEGORIES = [
   { slug: "laitiers", label: "Produits laitiers" },
   { slug: "fruits-legumes", label: "Fruits & Légumes" },
   { slug: "epicerie", label: "Épicerie" },
-  { slug: "traiteur", label: "Traiteur" },
+  { slug: "poissonnerie", label: "Poissonnerie" },
+  { slug: "boucherie", label: "Boucherie" },
   { slug: "promotions", label: "Promotions" }
 ];
 
@@ -18,145 +20,225 @@ window.LD_PRODUCTS = [
     slug: "chergui-sport-450",
     name: "CHERGUI Sport - Yaourt à boire protéiné - Muffins Myrtilles Framboise - (450 ml)",
     short: "36g de Protéines - Complément alimentaire",
-    price: 24.5,
+    price: 21.95,
     unit: "Dhs",
-    oldPrice: 28,
     badge: "Nouveau",
     category: "laitiers",
     categoryLabel: "Produits laitiers",
-    img: "assets/img/yaourt-450.png",
+    img: "assets/img/yaourt-450.jpg",
     stock: 42,
     featured: true,
     description:
-      "Le yaourt à boire protéiné CHERGUI Sport, au goût muffins myrtilles framboise. 36g de protéines par bouteille, sans conservateurs, idéal après l'effort ou au petit-déjeuner.",
+      "Le yaourt à boire protéiné CHERGUI Sport au goût muffins myrtilles framboise, format 450 ml. 36g de protéines par bouteille, sans conservateurs, à emporter après le sport ou au petit-déjeuner.",
     variants: [
-      { label: "450 ml — 36g", price: 24.5 },
-      { label: "260 ml — 21g", price: 16.9 }
+      { label: "450 ml — 36g", price: 21.95 },
+      { label: "260 ml — 21g", price: 14.95 }
     ]
   },
   {
     slug: "chergui-sport-260",
     name: "CHERGUI Sport - Yaourt à boire protéiné - Muffins Myrtilles Framboise - (260 ml)",
     short: "21g de Protéines - Complément alimentaire",
-    price: 16.9,
+    price: 14.95,
     unit: "Dhs",
     category: "laitiers",
     categoryLabel: "Produits laitiers",
-    img: "assets/img/yaourt-260.png",
+    img: "assets/img/yaourt-260.jpg",
     stock: 60,
     featured: true,
     description:
-      "Format nomade du yaourt protéiné CHERGUI Sport : 21g de protéines, texture onctueuse et arôme fruits rouges. À emporter partout."
+      "Format nomade du yaourt protéiné CHERGUI Sport : 21g de protéines, texture onctueuse et arôme myrtilles framboise."
+  },
+  {
+    slug: "fromage-frais-sucre",
+    name: "Fromage frais - nature sucré - (140g)",
+    short: "Sans soja, sans conservateurs",
+    price: 7,
+    unit: "Dhs",
+    category: "laitiers",
+    categoryLabel: "Produits laitiers",
+    img: "assets/img/fromage-sucre.jpg",
+    stock: 55,
+    featured: true,
+    description:
+      "Le fromage frais nature sucré de nos fermes, en pot de 140g. Une texture douce et onctueuse, sans soja et sans conservateurs."
+  },
+  {
+    slug: "fromage-frais-nature",
+    name: "Fromage frais - nature sans sucre - (140g)",
+    short: "Sans soja, sans conservateurs",
+    price: 7,
+    unit: "Dhs",
+    category: "laitiers",
+    categoryLabel: "Produits laitiers",
+    img: "assets/img/fromage-nature.jpg",
+    stock: 48,
+    description:
+      "Fromage frais nature sans sucre, en pot de 140g. Idéal en cuisine comme à table, sans soja et sans conservateurs."
+  },
+  {
+    slug: "kefir-450g",
+    name: "Kéfir - Yaourt à boire - (450g)",
+    short: "Yaourt à boire au lait fermenté",
+    price: 10.5,
+    oldPrice: 12,
+    badge: "Promo",
+    unit: "Dhs",
+    category: "laitiers",
+    categoryLabel: "Produits laitiers",
+    img: "assets/img/kefir.jpg",
+    stock: 33,
+    description:
+      "Yaourt à boire au lait fermenté, format 450g. Un goût frais et légèrement acidulé, riche en ferments."
   },
   {
     slug: "avocat",
-    name: "Avocat frais - Calibre moyen - Origine nos fermes",
-    short: "Traçabilité garantie - Vendu au kilo",
+    name: "Avocat - (Au Kg)",
+    short: "Issu d'une agriculture raisonnée",
     price: 19.95,
-    unit: "Dhs/Kg",
-    oldPrice: 24.95,
+    oldPrice: 48.95,
     badge: "Promo",
     category: "fruits-legumes",
     categoryLabel: "Fruits & Légumes",
-    img: "assets/img/avocat.png",
+    img: "assets/img/avocat.jpg",
+    unit: "Dhs/Kg",
     stock: 120,
     featured: true,
     promoEnds: "2026-11-03",
     description:
-      "Avocats récoltés à maturité dans nos fermes. Chair fondante, calibre moyen, parfaits en salade, en toast ou en guacamole. Prix valable du 27 octobre au 3 novembre 2026."
+      "Avocats issus d'une agriculture raisonnée, vendus au kilo. Chair fondante, parfaits en salade, en toast ou en guacamole. Offre valable jusqu'au 3 novembre 2026."
   },
   {
-    slug: "lait-entier-1l",
-    name: "Lait frais entier pasteurisé - Ferme Les Domaines - (1 L)",
-    short: "Circuit ultra-court - Sans conservateurs",
-    price: 12,
-    unit: "Dhs",
-    category: "laitiers",
-    categoryLabel: "Produits laitiers",
-    img: "assets/img/lait.png",
-    stock: 80,
-    featured: true,
+    slug: "banane",
+    name: "Banane - (Au Kg)",
+    short: "Riche en vitamines B6 et potassium",
+    price: 24.95,
+    unit: "Dhs/Kg",
+    category: "fruits-legumes",
+    categoryLabel: "Fruits & Légumes",
+    img: "assets/img/banane.jpg",
+    stock: 75,
     description:
-      "Lait entier frais, collecté le matin dans nos fermes et pasteurisé sur place. Une texture riche et un goût authentique, sans poudre ni reconstituant."
+      "Bananes vendues au kilo, riches en vitamines B6 et en potassium. À déguster nature ou en dessert."
   },
   {
-    slug: "jben-frais-250g",
-    name: "Jben frais traditionnel - (250 g)",
-    short: "Frais du jour - Sans conservateurs",
-    price: 28,
+    slug: "framboise-125g",
+    name: "Framboise - (125g)",
+    short: "Fruit rouge frais",
+    price: 22.95,
     unit: "Dhs",
-    badge: "Coup de cœur",
-    category: "laitiers",
-    categoryLabel: "Produits laitiers",
-    img: "assets/img/jben.png",
-    stock: 35,
+    category: "fruits-legumes",
+    categoryLabel: "Fruits & Légumes",
+    img: "assets/img/framboise.jpg",
+    stock: 26,
     description:
-      "Le jben frais de nos fermes, au lait entier et au caillé doux. À déguster nature, avec du miel ou en feuilletés."
+      "Barquette de framboises fraîches de 125g. Un fruit rouge parfumé, à savourer nature ou avec le fromage frais."
   },
   {
-    slug: "oeufs-plein-air-6",
-    name: "Œufs de poules élevées en plein air - Boîte de 6",
-    short: "Fermes partenaires - Calibre moyen",
-    price: 18.5,
-    unit: "Dhs",
-    category: "laitiers",
-    categoryLabel: "Produits laitiers",
-    img: "assets/img/oeufs.png",
+    slug: "carotte",
+    name: "Carotte - (Au Kg)",
+    short: "Sans résidu",
+    price: 12.95,
+    unit: "Dhs/Kg",
+    category: "fruits-legumes",
+    categoryLabel: "Fruits & Légumes",
+    img: "assets/img/carotte.jpg",
     stock: 90,
     description:
-      "Six œufs frais de poules élevées en plein air dans nos fermes partenaires. Coquille ferme, jaune soutenu, ramassés du jour."
+      "Carottes fraîches vendues au kilo, cultivées sans résidu. Pour les soupes, les purées et les salades."
   },
   {
-    slug: "miel-fleurs-500g",
-    name: "Miel de fleurs - Récolte artisanale - (500 g)",
-    short: "Épicerie fine - Non chauffé",
-    price: 85,
+    slug: "dattes-boufeggous",
+    name: "Dattes Boufeggous (1 kg)",
+    short: "Dattes issues de nos fermes, sans résidus",
+    price: 59.95,
+    oldPrice: 74.95,
+    badge: "Promo",
     unit: "Dhs",
     category: "epicerie",
     categoryLabel: "Épicerie",
-    img: "assets/img/miel.png",
-    stock: 24,
+    img: "assets/img/dattes.jpg",
+    stock: 40,
+    featured: true,
     description:
-      "Miel de fleurs récolté par nos apiculteurs partenaires, non chauffé pour préserver tous ses arômes. Parfait avec le jben frais."
+      "Dattes Boufeggous issues de nos fermes, sans résidus, en caisse de 1 kg. Une chair fondante et un goût de caramel naturel."
   },
   {
-    slug: "tacos-poulet-4",
-    name: "Rouleaux de tacos au poulet et sauce yaourt - Lot de 4",
-    short: "Sauce yaourt Jnane CHERGUI",
-    price: 38.5,
+    slug: "amlou-200g",
+    name: "Amlou traditionnel - (200g)",
+    short: "Recette 100% naturelle",
+    price: 83.95,
     unit: "Dhs",
-    category: "traiteur",
-    categoryLabel: "Traiteur",
-    img: "assets/img/recette-tacos.png",
+    category: "epicerie",
+    categoryLabel: "Épicerie",
+    img: "assets/img/amlou.jpg",
+    stock: 22,
+    description:
+      "Amlou traditionnel préparé selon la recette 100% naturelle : amandes, miel et huile d'argane. À déguster au petit-déjeuner."
+  },
+  {
+    slug: "pate-a-tartiner-400g",
+    name: "Pâte à tartiner - (400g)",
+    short: "Sans huile de palme - Sans conservateurs",
+    price: 67.95,
+    unit: "Dhs",
+    category: "epicerie",
+    categoryLabel: "Épicerie",
+    img: "assets/img/tartiner.jpg",
+    stock: 30,
+    description:
+      "Pâte à tartiner en pot de 400g, sans huile de palme et sans conservateurs. Gourmande sur le pain ou en pâtisserie."
+  },
+  {
+    slug: "truite-fumee-aneth",
+    name: "Filet de truite fumée à l'aneth - (100g)",
+    short: "Élevage sans soja, riche en oméga 3",
+    price: 59.9,
+    unit: "Dhs",
+    category: "poissonnerie",
+    categoryLabel: "Poissonnerie",
+    img: "assets/img/truite-fumee.jpg",
     stock: 18,
     description:
-      "Rouleaux de tacos généreusement garnis de poulet moelleux et de sauce yaourt Jnane CHERGUI, aux herbes fines. Prêts à réchauffer."
+      "Filet de truite fumée à l'aneth, conditionné en 100g. Élevage sans soja, riche en oméga 3, idéal en toast ou en salade."
   },
   {
-    slug: "soupe-potiron-500ml",
-    name: "Soupe de potiron au poulet et à la crème CHERGUI - (500 ml)",
-    short: "Fait maison - À réchauffer",
-    price: 22,
+    slug: "des-saumon-250g",
+    name: "Dés de saumon frais - (250g)",
+    short: "Riche en oméga 3",
+    price: 129,
     unit: "Dhs",
-    category: "traiteur",
-    categoryLabel: "Traiteur",
-    img: "assets/img/recette-soupe.png",
-    stock: 26,
+    category: "poissonnerie",
+    categoryLabel: "Poissonnerie",
+    img: "assets/img/saumon-des.jpg",
+    stock: 12,
     description:
-      "Une soupe onctueuse et réconfortante, où le fondant du potiron se marie à la tendreté du poulet et à la douceur de la crème CHERGUI."
+      "Dés de saumon frais prêts à cuisiner, en barquette de 250g. Riches en oméga 3, parfaits en tartare, poêlée ou bouillon."
   },
   {
-    slug: "feuilletes-jben-6",
-    name: "Feuilletés de Jben et truite fumée - Lot de 6",
-    short: "Prêt à cuire - Sans conservateurs",
-    price: 34,
+    slug: "brochettes-boeuf-250g",
+    name: "Brochettes de bœuf - (250g)",
+    short: "Issu de nos élevages, sans soja",
+    price: 49.95,
     unit: "Dhs",
-    badge: "Nouveau",
-    category: "traiteur",
-    categoryLabel: "Traiteur",
-    img: "assets/img/recette-feuilletes.png",
-    stock: 20,
+    category: "boucherie",
+    categoryLabel: "Boucherie",
+    img: "assets/img/brochettes.jpg",
+    stock: 24,
     description:
-      "Une bouchée croustillante et raffinée, où la légèreté du feuilleté s'accorde à la douceur du jben CHERGUI et à la finesse de la truite fumée."
+      "Brochettes de bœuf issues de nos élevages, sans soja, en barquette de 250g. À griller ou à cuire à la plancha."
+  },
+  {
+    slug: "poulet-fermier",
+    name: "Poulet fermier - (1,5 Kg)",
+    short: "Poids moyen entre 1,5 kg et 1,8 kg",
+    price: 149.95,
+    unit: "Dhs",
+    category: "boucherie",
+    categoryLabel: "Boucherie",
+    img: "assets/img/poulet.jpg",
+    stock: 15,
+    description:
+      "Poulet fermier de nos élevages, d'un poids moyen compris entre 1,5 kg et 1,8 kg. Élevé sans soja."
   }
 ];

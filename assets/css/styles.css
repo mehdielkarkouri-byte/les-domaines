@@ -1262,3 +1262,20 @@ select:focus-visible,
   .catalog-tools { flex: none; }
   .fab-stack { right: 20px; bottom: 120px; }
 }
+
+/* logo officiel de la boutique ------------------------------------------- */
+
+.logo {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  gap: 0;
+}
+.logo img {
+  height: 58px;
+  width: auto;
+  display: block;
+}
+@media (min-width: 600px) {
+  .logo img { height: 66px; }
+}
