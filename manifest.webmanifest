@@ -1,0 +1,17 @@
+{
+  "name": "Les Domaines — Boutique en ligne",
+  "short_name": "Les Domaines",
+  "description": "Produits frais de nos fermes, livrés à domicile.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F7F5F2",
+  "theme_color": "#779836",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
